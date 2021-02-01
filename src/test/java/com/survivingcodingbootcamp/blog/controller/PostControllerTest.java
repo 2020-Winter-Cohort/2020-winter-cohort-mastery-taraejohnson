@@ -22,7 +22,7 @@ public class PostControllerTest {
     @BeforeEach
     void setUp() {
         PostStorage postStorage = mock(PostStorage.class);
-        underTest = new PostController(postStorage);
+        /*underTest = new PostController(postStorage);*/
         model = mock(Model.class);
         testPost = mock(Post.class);
         when(postStorage.retrievePostById(1L)).thenReturn(testPost);

@@ -10,7 +10,6 @@ public class HomeController {
     private TopicStorage topicStorage;
 
     public HomeController(TopicStorage topicStorage) {
-
         this.topicStorage = topicStorage;
     }
 

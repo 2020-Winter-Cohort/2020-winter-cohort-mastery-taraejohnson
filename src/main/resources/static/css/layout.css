@@ -6,6 +6,12 @@
 .header{
     padding: 10px;
 }
+.header__nav{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
 .topics{
     padding: 10px;
 }
@@ -23,5 +29,13 @@
         min-width:1000px;
         margin: 15px auto;
     }
-
+}
+.post__content{
+    padding: 1rem;
+}
+.main-content{
+    padding: 1rem;
+}
+.post__topic-title{
+    padding-bottom: 20px;
 }

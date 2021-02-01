@@ -16,7 +16,7 @@
         <h1 class="header__title">Surviving Coding Boot Camp</h1>
         <nav class="header__nav">
             <div class="header__nav-item"><a href="/" class="header__nav-link">Home</a></div>
-            <div class="header__nav-item"><a href="/hashtags" class="header__nav-link">Hashtags</a></div>
+            <div class="header__nav-item"><a href="/all-hashtags" class="header__nav-link">Hashtags</a></div>
         </nav>
     </header>
     <main class="main-content">
@@ -30,6 +30,32 @@
                        class="posts__nav-link"></a>
                 </div>
             </nav>
+
+
+        <form name="userPost" class="user-post" action="topicPost/add" method="POST">
+
+                <legend>
+                    <h3>Add a post on this topic:</h3>
+                </legend>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" size="50" /><br>
+
+                <label for="author">Your Name:</label><br>
+                <input type="text" id="author" name="author" size="50" /><br>
+
+                <input type="hidden" th:value="${topic.id}" name="id" />
+
+                <label for="textarea">Write your post:</label><br>
+                <textarea name="content" id="textarea" rows="10" cols="52" wrap="hard">
+                </textarea><br>
+
+                <label for="hashtag">Hashtag:</label>
+                <input type="text" id="hashtag" name="tagName" value="#"/><br>
+
+                <button class="submit" type="submit" formaction="topicPost/add" formmethod="POST"
+                        value="Submit using POST">Submit</button>
+
+        </form>
         </section>
     </main>
 </div>

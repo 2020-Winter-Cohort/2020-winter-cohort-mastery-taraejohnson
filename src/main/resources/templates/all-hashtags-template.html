@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Hashtags</title>
+    <link rel="icon" href="/assets/icon.png">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Surviving Coding Boot Camp -- All Hashtags</h1>
+            <nav class="header__nav">
+                <div class="header__nav-item"><a href="/" class="header__nav-link">Home</a></div>
+                <div class="header__nav-item"><a href="/all-hashtags" class="header__nav-link">Hashtags</a></div>
+            </nav>
+        </header>
+        <main class="main-content">
+        <div class="all-hashtags" th:each="hashtags:${hashtag}">
+
+            <button><a th:text="${hashtags.tagName}"
+                       th:href="'hashtag/' + ${hashtags.id}">#Beginner</a></button>
+
+        </div>
+        </main>
+    </div>
+</body>
+</html>

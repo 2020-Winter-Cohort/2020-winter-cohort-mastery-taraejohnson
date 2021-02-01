@@ -42,3 +42,24 @@ a{
 a:hover{
     color: var(--light-highlight);
 }
+button{
+    background-color: var(--light-highlight);
+    color: var(--dark-background);
+    padding: 5px;
+    font-weight: bold;
+}
+input,
+textarea{
+    background-color: var(--light-highlight);
+    color: darkslategray;
+}
+.user-post{
+    padding-top: 2rem;
+}
+.add_hashtag{
+    padding-top: 1rem;
+}
+.hashtags_displayed{
+    display: flex;
+    flex-direction: row;
+}

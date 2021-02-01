@@ -20,7 +20,7 @@ public class PostStorageJpaImplTest {
     @BeforeEach
     void setUp() {
         postRepo = mock(PostRepository.class);
-        underTest = new PostStorageJpaImpl(postRepo);
+        /*underTest = new PostStorageJpaImpl(postRepo);*/
         testPost = mock(Post.class);
     }
 
